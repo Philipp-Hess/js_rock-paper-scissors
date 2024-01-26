@@ -7,7 +7,7 @@ function makeChoice(userChoice) {
 }
 
 function getComputerChoice() {
-  const choices = ["rock", "paper", "scissors"];
+  const choices = ["Stein", "Papier", "Schere"];
   return choices[Math.floor(Math.random() * 3)];
 }
 
@@ -15,9 +15,9 @@ function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
     return "Es ist ein Unentschieden!";
   } else if (
-    (userChoice === "rock" && computerChoice === "scissors") ||
-    (userChoice === "paper" && computerChoice === "rock") ||
-    (userChoice === "scissors" && computerChoice === "paper")
+    (userChoice === "Stein" && computerChoice === "Schere") ||
+    (userChoice === "Papier" && computerChoice === "Stein") ||
+    (userChoice === "Schere" && computerChoice === "Papier")
   ) {
     return "Du gewinnst!";
   } else {
